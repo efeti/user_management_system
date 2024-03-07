@@ -10,12 +10,12 @@ Welcome to User Management System API. This API helps the admin to manage users,
 ### Installation
 
 -   run "composer install"
--   run "cp .env.example .env"
--   run "cp .env.example .env.test" (Set up testing env)
+-   run "copy .env.example .env"
+-   run "copy .env.example .env.test" (Set up testing env)
 
 ### Set up for laraval passport authenticator
 
--   run "run artisan migrate"
+-   run "php artisan migrate"
 -   run "php artisan passport:client --personal"
 
 After creating your personal access client, place the client's ID and plain-text secret value in your application's .env file:
@@ -23,4 +23,21 @@ After creating your personal access client, place the client's ID and plain-text
 PASSPORT_PERSONAL_ACCESS_CLIENT_ID="client-id-value"
 PASSPORT_PERSONAL_ACCESS_CLIENT_SECRET="unhashed-client-secret-value"
 
-run php artisan passport:keys
+### Generate singning keys
+
+- run "php artisan passport:keys"
+
+### Generate App keys
+ 
+- run "php artisan key:generate"
+
+### Register Admin
+
+- run "php artisan db:seed --class=RegisterAdminSeeder"
+
+ NOTE: admin email is "admin@gmail.com", while password is "password"
+
+ ### Run Test
+
+ - run "php artisan test tests/Feature
+"
