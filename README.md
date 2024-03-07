@@ -15,9 +15,8 @@ Welcome to User Management System API. This API helps the admin to manage users,
 
 ### Set up for laraval passport authenticator
 
--   run "php artisan passport:client --personal"
-
 -   run "run artisan migrate"
+-   run "php artisan passport:client --personal"
 
 After creating your personal access client, place the client's ID and plain-text secret value in your application's .env file:
 
