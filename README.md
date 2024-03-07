@@ -40,4 +40,8 @@ PASSPORT_PERSONAL_ACCESS_CLIENT_SECRET="unhashed-client-secret-value"
  ### Run Test
 
  - run "php artisan test tests/Feature
-"
+
+
+### Postman test link
+
+- https://documenter.getpostman.com/view/23178216/2sA2xfZZPu
